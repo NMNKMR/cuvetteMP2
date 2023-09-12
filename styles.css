@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Delius+Unicase:wght@700&family=Inter:wght@200;400;700&display=swap');
+
+:root {
+    --white: #FFF;
+    --fontDM: DM Sans;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+/* .......................NAVBAR......................... */
+#navbar {
+    background-color: #6F6AF7;
+    display: flex;
+    width: 100vw;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.6rem 0 2.5rem;
+    color: var(--white);
+    position: fixed;
+    z-index: 9;
+}
+
+.logo {
+    font-family: Delius Unicase;
+    font-weight: 700;
+    font-size: 2.83938rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.8rem;
+}
+
+.nav-links a,select {
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--fontDM);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.nav-links li select, select:focus {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.search input[type="search"]{
+    border-radius: 3.9375rem;
+    background: var(--white);
+    border: none;
+    width: 19.625rem;
+    height: 1.5625rem;
+    padding: 1.3rem 1.5rem;
+    font-size: 1.52688rem;
+    font-weight: 400;
+    font-family: var(--fontDM);
+    outline: none;
+}
+
+.search {
+    position: relative;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+.search::after {
+    content: '\f002';
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-size: 1.52rem;
+    color: #ADADAD;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.fa-bars {
+    font-size: 2.83rem;
+    cursor: pointer;
+}
+
+/* ..................MAIN............................ */
+
+.img-area {
+    display: inline-flex;
+    padding: 13.13rem 0 5.5rem 9.5rem;
+}
+
+.img-area img {
+    box-shadow: 0px 9px 31px 0px rgba(0, 0, 0, 0.40);
+}
+
+.img-area textarea {
+    width: 50rem;
+    height: 32rem;
+    background: #E5D8FF;
+    border-radius: 1.25rem;
+    border: 6px solid var(--white);
+    box-shadow: 3px 5px 27px 0px rgba(0, 0, 0, 0.25) inset;
+    color: #6F7373;
+    font-family: var(--fontDM);
+    font-size: 1.3rem;
+    font-weight: 400;
+    outline: none;
+    line-height: 150%;
+    padding: 1.31rem 1rem 2.12rem;
+    margin-left: 2rem;
+    resize: none;
+}
+
+
+/* ...................STICKY.......................... */
+
+.sticky-icons {
+    position: sticky;
+    float: right;
+    margin-top: 18rem;
+    top: 10rem;
+}
+
+.whatsapp, .facebook, .twitter {
+    height: 4rem;
+    width: 4rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.whatsapp {
+    background-image: url(images/whatsapp-icon.jpg);
+    border-radius: 0.6875rem;
+    border: 2px solid #000;
+    margin-bottom: 2px;
+}
+
+.facebook {
+    background-image: url(images/facebook-icon.jpg);
+}
+
+.twitter {
+    background-image: url(images/twitter-icon.jpg);
+}
+
+/* ....................................................... */
+
+.cards {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3.5rem;
+    margin-bottom: 10rem;
+}
+
+.cards > div {
+    width: 18rem;
+    height: 8rem;
+    border-radius: 0.6875rem;
+    box-shadow: 0px 9px 31px 0px rgba(0, 0, 0, 0.40);
+    color: var(--white);
+    font-family: var(--fontDM);
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-left: 1.75rem;
+    letter-spacing: 0.0725rem;
+}
+
+.card1 {
+    background: #929DFF;
+}
+
+.card2 {
+    background: #734CF2;
+}
+
+.card3 {
+    background: #D288FF;
+}
+
+.card4 {
+    background: #000;
+}
+
+.info {
+    display: flex;
+    height: 44.8125rem;
+    width: 85vw;
+    text-align: center;
+    margin: auto;
+    background: #483EFF;
+    border-radius: 1.3125rem;
+    margin-bottom: 5.5rem;
+}
+
+.options {
+    width: 37%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.options > div {
+    height: 8.3125rem;
+    width: 24.8125rem;
+    font-family: var(--fontDM);
+    font-weight: 700;
+    font-size: 2rem;
+    border-radius: 1.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    letter-spacing: 0.0875rem;
+}
+
+.your-info {
+    background: #BCE0F6;
+    box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.39);
+}
+
+.bookmarks, .settings {
+    border: 5px solid var(--white);
+    color: var(--white);
+}
+
+.info-area {
+    width: 63%;
+    height: 100%;
+    padding: 1.9rem 1.6rem 1.9rem 0;
+}
+
+.info-area form {
+    height: 100%;
+    width: 100%;
+    background: var(--white);
+    border-radius: 1.1875rem;
+    line-height: 4rem;
+    position: relative;
+    text-align: left;
+}
+
+.info-area form h1 {
+    padding-top: 4rem;
+    padding-left: 3rem;
+    font-family: Inter;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #04285A;
+    letter-spacing: 0.24938rem;
+    margin-top: 0;
+}
+
+.info-area form > label {
+    padding-left: 5rem;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.18375rem;
+}
+
+.info-area form > input {
+    color: #143565;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.075rem;
+    border: none;
+    outline: none;
+}
+
+.info-area form button {
+    background: #000;
+    border-radius: 0.5625rem;
+    border: none;
+    width: 12rem;
+    height: 4.2rem;
+    position: absolute;
+    right: 3rem;
+    bottom: 2rem;
+    color: var(--white);
+    text-align: left;
+    font-family: Roboto;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding-left: 2.5rem;
+    cursor: pointer;
+}
+
+.info-area form button::after {
+    content: url(images/arrow-1.jpg);
+    position: absolute;
+    top: 1.3rem;
+    right: 2.5rem;
+}
+
+/* ..........................SUPPORT..................... */
+.support {
+    height: 7.5rem;
+    width: 7.5rem;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 5rem;
+    z-index: 1;
+    cursor: pointer;
+}
